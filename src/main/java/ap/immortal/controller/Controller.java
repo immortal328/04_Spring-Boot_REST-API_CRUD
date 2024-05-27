@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import ap.immortal.model.Student;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v1/api")
 public class Controller {
 	
 	@GetMapping("/hello")
@@ -18,7 +18,7 @@ public class Controller {
 		return "<h1> Wellcome to Spring-Boot REST API-CRUD Project...</h1>";
 	}
 	
-	@GetMapping("/api/students")
+	@GetMapping("/students")
 	public List<Student> getStudents(){
 		List<Student>  list = new ArrayList<>();
 		list.add(new Student("Amar", "Pujari"));
