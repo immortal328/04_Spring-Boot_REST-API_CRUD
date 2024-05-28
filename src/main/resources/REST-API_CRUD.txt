@@ -12,4 +12,5 @@ Exception Handling in Spring-Boot:
 	
 Global Exception Handle:
 	- @ControllerAdvice - real time use of AOP
-	
+	- create Class with annotation @ControllerAdvice
+	- add methods with @ExceptionHandler annotation
