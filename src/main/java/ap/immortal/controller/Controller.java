@@ -30,7 +30,7 @@ public class Controller {
 		return list;		
 	}
 	
-	@GetMapping("/student/{studentId}")
+	@GetMapping("/students/{studentId}")
 	public Student getStudentById(@PathVariable Integer studentId) {
 		//TODO: need to implement Code	
 		if(studentId >= list.size() || studentId < 0) {
@@ -40,7 +40,7 @@ public class Controller {
 	}
 	
 	//TODO:  need to change implementations with actual database
-	@PostMapping("/student/add")
+	@PostMapping("/students")
 	public void addStudent(@RequestBody Student student) {
 		list.add(student);
 		System.out.println("Added Student in list Succesfully "+list.toString());		
