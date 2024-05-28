@@ -16,7 +16,7 @@ import jakarta.annotation.PostConstruct;
 
 @RestController
 @RequestMapping("/v1/api")
-public class StudentRESTController {
+public class StudentRestController {
 	
 	private List<Student> list;
 	
