@@ -6,4 +6,6 @@
 	- variable api and vairable in method argument should same with syntax @PathVarible Integer id
 	
 Exception Handling in Spring-Boot:
-	
+	- define ErrorResponse POJO class
+	- Define Exception with extends RuntimeException
+	- define method which return ResponseEntity<ErrorResponse POJO,HTTPCode> and annoted with @ExceptionHandler	
