@@ -1,3 +1,9 @@
 
 @RestController = @Controller + @RequestBody
-@PathVariable :- 
+
+@PathVariable :
+	- its annotation which we can provide in API
+	- variable api and vairable in method argument should same with syntax @PathVarible Integer id
+	
+Exception Handling in Spring-Boot:
+	
