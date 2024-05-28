@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import ap.immortal.exception.StudentNotFoundException;
-import ap.immortal.model.StudentErrorResponse;
+import ap.immortal.model.error.StudentErrorResponse;
 
 @ControllerAdvice
 public class StudentExceptionHandler {

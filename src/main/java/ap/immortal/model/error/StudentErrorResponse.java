@@ -1,4 +1,4 @@
-package ap.immortal.model;
+package ap.immortal.model.error;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
