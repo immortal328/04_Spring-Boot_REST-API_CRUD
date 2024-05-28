@@ -56,7 +56,7 @@ public class Controller {
 		list.add(new Student("Amit", "Nayar"));
 	}
 	
-	//ExceptionHandler Method
+	//ExceptionHandler Method fo NOT FOUND
 	@ExceptionHandler
 	public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException studentException){
 		StudentErrorResponse errResp = new StudentErrorResponse();
@@ -66,5 +66,18 @@ public class Controller {
 		
 		return new ResponseEntity<>(errResp,HttpStatus.NOT_FOUND);
 	}
+	
+	//ExceptionHandler for Generic Exception BAD REQUEST
+	@ExceptionHandler
+	public ResponseEntity<StudentErrorResponse> handleGenricException(Exception exc){
+		StudentErrorResponse errResp = new StudentErrorResponse();
+		errResp.setStatus(HttpStatus.BAD_REQUEST.value());
+		errResp.setMessage(exc.getMessage());
+		errResp.setTimeStamp(System.currentTimeMillis());
+		
+		return new ResponseEntity<>(errResp,HttpStatus.BAD_REQUEST);
+	} 
+	
+	
 
 }
