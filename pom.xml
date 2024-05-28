@@ -12,7 +12,7 @@
 	
 	<groupId>ap.immortal</groupId>
 	<artifactId>practice-REST-API_CRUD</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>Spring-Boot_REST-API_CRUD</name>
 	<description>Practice Spring-Boot REST-API_CRUD</description>
 	
@@ -21,6 +21,19 @@
 	</properties>
 	
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+<!--		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>3.0.0</version>
+		</dependency>
+
+		 https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui 
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>3.0.0</version>
+		</dependency>-->
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
