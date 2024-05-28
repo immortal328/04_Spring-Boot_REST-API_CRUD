@@ -14,3 +14,25 @@ Global Exception Handle:
 	- @ControllerAdvice - real time use of AOP
 	- create Class with annotation @ControllerAdvice
 	- add methods with @ExceptionHandler annotation
+
+REST API Design Best Practices:
+-------------------------------
+  - user appropriate API naming convention
+  - Use correct HTTP calls to API
+  - return correct HTTP response
+   	* 1## : informational
+   	* 2## : Successful
+   	* 3## : Redirectional
+   	* 4## : Client Side error
+   	* 5## : Server error
+  - User Versioning
+  - Add security
+  - Maintain Statelessness
+  - Add filtering, Sorting or Pagination
+  - Context Negotiation
+  - Handle error gracefully
+  - Use Documentation like Swagger/openAI
+  
+ Creating REST API Project for EMPLOYEE
+  
+   	
