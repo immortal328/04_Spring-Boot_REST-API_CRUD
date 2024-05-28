@@ -1,4 +1,4 @@
-package ap.immortal.controller;
+package ap.immortal.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

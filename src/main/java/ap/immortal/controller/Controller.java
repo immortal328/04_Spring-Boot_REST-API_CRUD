@@ -3,9 +3,6 @@ package ap.immortal.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import ap.immortal.exception.StudentNotFoundException;
 import ap.immortal.model.Student;
 import jakarta.annotation.PostConstruct;
 
@@ -54,30 +52,6 @@ public class Controller {
 		list.add(new Student("Amar", "Glen"));
 		list.add(new Student("Avi", "Maxen"));
 		list.add(new Student("Amit", "Nayar"));
-	}
-	
-	//ExceptionHandler Method fo NOT FOUND
-	@ExceptionHandler
-	public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException studentException){
-		StudentErrorResponse errResp = new StudentErrorResponse();
-		errResp.setStatus(HttpStatus.NOT_FOUND.value());
-		errResp.setMessage(studentException.getMessage());
-		errResp.setTimeStamp(System.currentTimeMillis());
-		
-		return new ResponseEntity<>(errResp,HttpStatus.NOT_FOUND);
-	}
-	
-	//ExceptionHandler for Generic Exception BAD REQUEST
-	@ExceptionHandler
-	public ResponseEntity<StudentErrorResponse> handleGenricException(Exception exc){
-		StudentErrorResponse errResp = new StudentErrorResponse();
-		errResp.setStatus(HttpStatus.BAD_REQUEST.value());
-		errResp.setMessage(exc.getMessage());
-		errResp.setTimeStamp(System.currentTimeMillis());
-		
-		return new ResponseEntity<>(errResp,HttpStatus.BAD_REQUEST);
-	} 
-	
-	
+	}	
 
 }

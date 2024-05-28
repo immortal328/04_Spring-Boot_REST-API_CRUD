@@ -9,3 +9,7 @@ Exception Handling in Spring-Boot:
 	- define ErrorResponse POJO class
 	- Define Exception with extends RuntimeException
 	- define method which return ResponseEntity<ErrorResponse POJO,HTTPCode> and annoted with @ExceptionHandler	
+	
+Global Exception Handle:
+	- @ControllerAdvice - real time use of AOP
+	
