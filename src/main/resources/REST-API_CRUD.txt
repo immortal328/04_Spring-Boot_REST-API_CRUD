@@ -3,7 +3,7 @@
 
 @PathVariable :
 	- its annotation which we can provide in API
-	- variable api and vairable in method argument should same with syntax @PathVarible Integer id
+	- variable api and variable in method argument should same with syntax @PathVarible Integer id
 	
 Exception Handling in Spring-Boot:
 	- define ErrorResponse POJO class
@@ -34,5 +34,22 @@ REST API Design Best Practices:
   - Use Documentation like Swagger/openAI
   
  Creating REST API Project for EMPLOYEE
+  -
+  
+ Spring Data REST:
+ 	- data-rest endpoints are HATEOAS complaint (Hypermedia As The Engine Of Application State)
+ 	- support pagination,filter
+ 	- Extending and adding custom queries
+ 	- Query Domain Specific Language (Query DSL)
+ 	-To implement REST API using Data-rest need below three thing
+ 		1. Entity
+ 		2. EntityRepository extends JpaRepository<Entity,Primary_key_type>{}
+ 		3. add data-rest dependency in pom.xml
+		 	<dependency>
+		    	<groupId>org.springframework.boot</groupId>
+		    	<artifactId>spring-boot-starter-data-rest</artifactId>
+			</dependency>
+ 
+ 
   
    	

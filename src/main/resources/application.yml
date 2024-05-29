@@ -1,6 +1,16 @@
 spring:
+  data:
+    rest:
+      base-path: /v3/api
+#  security:
+#    user:
+#      name: test
+#      password: test
+      
+      
   application:
     name: Spring-Boot_REST-API_CRUD
+    
   jpa:
     hibernate:
       ddl-auto: update
