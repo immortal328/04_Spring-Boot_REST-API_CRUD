@@ -49,6 +49,8 @@ REST API Design Best Practices:
 		    	<groupId>org.springframework.boot</groupId>
 		    	<artifactId>spring-boot-starter-data-rest</artifactId>
 			</dependency>
+			
+	- @RepositoryRestResource(path="member")  -> for custom path
  
  
   

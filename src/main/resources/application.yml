@@ -2,6 +2,8 @@ spring:
   data:
     rest:
       base-path: /v3/api
+      default-page-size: 10
+      
 #  security:
 #    user:
 #      name: test
