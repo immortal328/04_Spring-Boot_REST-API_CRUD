@@ -1,9 +1,11 @@
 <h1> Spring-Boot REST-API CRUD </h1>
 # Project Description:
-Developed a Spring Boot REST-API CRUD project featuring two distinct models: Employee and Person. 
-For the Employee model, comprehensive CRUD ( Create, Read, Update, Delete ) operations are implemented by extending JPARepository, providing seamless interaction with the database. 
-On the other hand, the Person model utilizes the data-rest dependency, leveraging Spring Boot's automatic CRUD functionality. 
-MySQL serves as the database backend, facilitating local operations with configurations specified in a YAML file.
+======================
+
+Constructed a robust Spring Boot Hibernate/JPA project focusing on comprehensive CRUD ( Create, Read, Update, Delete ) operations for the Student model. 
+Leveraging JPARepository for streamlined database interactions and EntityManager for precise transaction management,
+the application ensures efficient data handling. Notably, global exception handling is implemented using @ControllerAdvice at the class level and @ExceptionHandler at the method level,
+enhancing error resilience and providing a smoother user experience. MySQL serves as the database backend, with connection details configured in a YAML file for easy deployment on localhost."
 
 Information : 
 
