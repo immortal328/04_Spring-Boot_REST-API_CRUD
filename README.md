@@ -1,0 +1,63 @@
+<h1> Spring-Boot REST-API CRUD </h1>
+Developed a Spring Boot REST-API CRUD project featuring two distinct models: Employee and Person. 
+For the Employee model, comprehensive CRUD ( Create, Read, Update, Delete ) operations are implemented by extending JPARepository, providing seamless interaction with the database. 
+On the other hand, the Person model utilizes the data-rest dependency, leveraging Spring Boot's automatic CRUD functionality. 
+MySQL serves as the database backend, facilitating local operations with configurations specified in a YAML file.
+
+Information : 
+
+
+@RestController = @Controller + @RequestBody
+
+@PathVariable :
+	- its annotation which we can provide in API
+	- variable api and variable in method argument should same with syntax @PathVarible Integer id
+	
+# Exception Handling in Spring-Boot:
+	- define ErrorResponse POJO class
+	- Define Exception with extends RuntimeException
+	- define method which return ResponseEntity<ErrorResponse POJO,HTTPCode> and annoted with @ExceptionHandler	
+	
+# Global Exception Handle:
+	- @ControllerAdvice - real time use of AOP
+	- create Class with annotation @ControllerAdvice
+	- add methods with @ExceptionHandler annotation
+
+# REST API Design Best Practices:
+-------------------------------
+  - user appropriate API naming convention
+  - Use correct HTTP calls to API
+  - return correct HTTP response
+   	* 1## : informational
+   	* 2## : Successful
+   	* 3## : Redirectional
+   	* 4## : Client Side error
+   	* 5## : Server error
+  - User Versioning
+  - Add security
+  - Maintain Statelessness
+  - Add filtering, Sorting or Pagination
+  - Context Negotiation
+  - Handle error gracefully
+  - Use Documentation like Swagger/openAI
+  
+ #Creating REST API Project for EMPLOYEE 
+ # Spring Data REST:
+ 	- data-rest endpoints are HATEOAS complaint (Hypermedia As The Engine Of Application State)
+ 	- support pagination,filter
+ 	- Extending and adding custom queries
+ 	- Query Domain Specific Language (Query DSL)
+ 	- To implement REST API using Data-rest need below three thing
+ 		1. Entity
+ 		2. EntityRepository extends JpaRepository<Entity,Primary_key_type>{}
+ 		3. add data-rest dependency in pom.xml
+		 	<dependency>
+		    	<groupId>org.springframework.boot</groupId>
+		    	<artifactId>spring-boot-starter-data-rest</artifactId>
+			</dependency>
+   for custom path give this annotation on repository class
+	- @RepositoryRestResource(path="member")
+ 
+ 
+  
+   	
