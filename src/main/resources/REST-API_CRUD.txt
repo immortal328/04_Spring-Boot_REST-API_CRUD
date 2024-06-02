@@ -41,7 +41,7 @@ REST API Design Best Practices:
  	- support pagination,filter
  	- Extending and adding custom queries
  	- Query Domain Specific Language (Query DSL)
- 	-To implement REST API using Data-rest need below three thing
+ 	- To implement REST API using Data-rest need below three thing
  		1. Entity
  		2. EntityRepository extends JpaRepository<Entity,Primary_key_type>{}
  		3. add data-rest dependency in pom.xml
