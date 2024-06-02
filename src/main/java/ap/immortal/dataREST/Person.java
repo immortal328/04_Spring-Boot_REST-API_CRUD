@@ -1,4 +1,4 @@
-package ap.immortal.rest;
+package ap.immortal.dataREST;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
