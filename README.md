@@ -1,4 +1,5 @@
 <h1> Spring-Boot REST-API CRUD </h1>
+# Project Description:
 Developed a Spring Boot REST-API CRUD project featuring two distinct models: Employee and Person. 
 For the Employee model, comprehensive CRUD ( Create, Read, Update, Delete ) operations are implemented by extending JPARepository, providing seamless interaction with the database. 
 On the other hand, the Person model utilizes the data-rest dependency, leveraging Spring Boot's automatic CRUD functionality. 
@@ -7,23 +8,24 @@ MySQL serves as the database backend, facilitating local operations with configu
 Information : 
 
 
-@RestController = @Controller + @RequestBody
+# RestController : 
+	- @RestController = @Controller + @RequestBody
 
-@PathVariable :
+# PathVariable :
 	- its annotation which we can provide in API
 	- variable api and variable in method argument should same with syntax @PathVarible Integer id
 	
-# Exception Handling in Spring-Boot:
+# Exception Handling in Spring Boot :
 	- define ErrorResponse POJO class
 	- Define Exception with extends RuntimeException
 	- define method which return ResponseEntity<ErrorResponse POJO,HTTPCode> and annoted with @ExceptionHandler	
 	
-# Global Exception Handle:
+# Global Exception Handle :
 	- @ControllerAdvice - real time use of AOP
 	- create Class with annotation @ControllerAdvice
 	- add methods with @ExceptionHandler annotation
 
-# REST API Design Best Practices:
+# REST API Design Best Practices :
 -------------------------------
   - user appropriate API naming convention
   - Use correct HTTP calls to API
@@ -42,7 +44,7 @@ Information :
   - Use Documentation like Swagger/openAI
   
  #Creating REST API Project for EMPLOYEE 
- # Spring Data REST:
+ # Spring Data RES T:
  	- data-rest endpoints are HATEOAS complaint (Hypermedia As The Engine Of Application State)
  	- support pagination,filter
  	- Extending and adding custom queries
